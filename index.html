@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiil-Kaab Academy</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    header {
+      background: #0b6b4f;
+      color: white;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    header span {
+      font-size: 13px;
+      opacity: .9;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b6b4f, #11956d);
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0b6b4f;
+    }
+
+    .card p {
+      color: #687386;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+
+    button {
+      border: none;
+      background: #0b6b4f;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #09583f;
+    }
+
+    .about {
+      background: white;
+      margin-top: 25px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.06);
+    }
+
+    .about h2 {
+      color: #0b6b4f;
+      margin-bottom: 12px;
+    }
+
+    .about p {
+      line-height: 1.7;
+      color: #4d596b;
+    }
+
+    footer {
+      margin-top: 35px;
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Jiil-Kaab Academy</h1>
+  <span>Web V1</span>
+</header>
+
+<section class="hero">
+  <h2>Ku Soo Dhawoow Jiil-Kaab</h2>
+  <p>
+    Jiil-Kaab Academy waa madal waxbarasho oo loogu talagalay
+    ardayda iyo macallimiinta.
+  </p>
+</section>
+
+<main class="container">
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🎓 Arday</h3>
+      <p>
+        Ardaydu waxay ka heli karaan casharro,
+        imtixaanno iyo natiijooyin.
+      </p>
+      <button onclick="studentLogin()">Arday</button>
+    </div>
+
+    <div class="card">
+      <h3>👨‍🏫 Macallin</h3>
+      <p>
+        Macallimiintu waxay maamuli karaan
+        casharrada iyo imtixaannada.
+      </p>
+      <button onclick="teacherLogin()">Macallin</button>
+    </div>
+
+    <div class="card">
+      <h3>📝 Imtixaan</h3>
+      <p>
+        Nidaam loogu diyaariyo looguna galo
+        imtixaannada online-ka.
+      </p>
+      <button onclick="examInfo()">Imtixaan</button>
+    </div>
+
+  </div>
+
+  <div class="about">
+    <h2>Ku saabsan Jiil-Kaab</h2>
+    <p>
+      Jiil-Kaab Academy waxay hiigsanaysaa in ay bixiso
+      waxbarasho casri ah oo online ah, iyadoo ardayda
+      iyo macallimiinta siinaysa meel ay si fudud uga
+      wada shaqeeyaan.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Jiil-Kaab Academy — Web V1
+</footer>
+
+<script>
+  function studentLogin() {
+    alert("Qaybta Ardayda ayaa dhowaan diyaar noqonaysa.");
+  }
+
+  function teacherLogin() {
+    alert("Qaybta Macallimiinta ayaa dhowaan diyaar noqonaysa.");
+  }
+
+  function examInfo() {
+    alert("Nidaamka imtixaanka online-ka ayaa la diyaarinayaa.");
+  }
+</script>
+
+</body>
+</html>
